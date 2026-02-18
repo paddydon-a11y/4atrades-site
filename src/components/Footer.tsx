@@ -25,8 +25,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "/", label: "Home" },
-                { href: "/trades", label: "All Trades" },
-                { href: "/partnerships", label: "Strategic Partnerships" },
+                { href: "/tt", label: "All Trades" },
+                { href: "/join", label: "Strategic Partnerships" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-text-muted hover:text-accent transition-colors text-sm">

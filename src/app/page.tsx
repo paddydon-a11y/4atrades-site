@@ -46,19 +46,19 @@ function ServicesSection() {
       title: "Labour Supply",
       desc: "From a single operative to full gangs. Skilled tradespeople on your site within 24 hours, fully vetted and ready to work.",
       icon: "👷",
-      href: "/trades",
+      href: "/tt",
     },
     {
       title: "Fixed-Price Packages",
       desc: "Labour, plant, materials, and management — all under one roof. One price, one invoice, zero headaches.",
       icon: "📋",
-      href: "/trades",
+      href: "/tt",
     },
     {
       title: "Strategic Partnerships",
       desc: "Earn 1-3% commission on every referral. Three tiers designed for construction professionals who want to earn while they work.",
       icon: "🤝",
-      href: "/partnerships",
+      href: "/join",
     },
   ];
 
@@ -140,7 +140,7 @@ function TradesGrid() {
 
         <AnimatedSection className="text-center mt-12">
           <Link
-            href="/trades"
+            href="/tt"
             className="inline-block bg-accent hover:bg-accent-bright text-white font-bold px-8 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
           >
             View All Trades
@@ -226,7 +226,7 @@ function PartnershipCTA() {
 
         <AnimatedSection className="mt-10">
           <Link
-            href="/partnerships"
+            href="/join"
             className="inline-block bg-accent hover:bg-accent-bright text-white font-bold px-8 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
           >
             Explore Partnerships
@@ -401,7 +401,7 @@ export default function HomePage() {
               Call 0330 133 7901
             </a>
             <Link
-              href="/trades"
+              href="/tt"
               className="border-2 border-white/30 hover:border-accent text-white hover:text-accent px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
             >
               View All Trades

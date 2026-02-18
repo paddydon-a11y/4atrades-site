@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/trades", label: "Trades" },
-  { href: "/partnerships", label: "Partnerships" },
+  { href: "/tt", label: "Trades" },
+  { href: "/join", label: "Partnerships" },
 ];
 
 export default function Header() {
