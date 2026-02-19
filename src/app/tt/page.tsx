@@ -49,20 +49,18 @@ export default function TradesPage() {
       <section className="bg-accent py-10 px-6">
         <div className="mx-auto max-w-5xl">
           <AnimatedSection>
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-              <div className="flex-shrink-0">
-                <span className="font-[family-name:var(--font-display)] text-5xl text-darker">⚠️</span>
-              </div>
+            <div className="flex flex-col items-center text-center gap-6">
+              <span className="font-[family-name:var(--font-display)] text-5xl text-darker">⚠️</span>
               <div>
                 <h2 className="text-2xl md:text-3xl text-darker">The Workers&apos; Rights Bill Is Now Law</h2>
-                <p className="mt-2 text-darker/80 font-medium leading-relaxed">
+                <p className="mt-3 text-darker/80 font-medium leading-relaxed max-w-2xl mx-auto">
                   Using 4A Trades means zero payroll risk, zero tribunal exposure, and full compliance.
                   We handle employment law, PAYE, pensions, holiday pay — everything. You just get the tradespeople.
                 </p>
               </div>
               <a
                 href="tel:03301337901"
-                className="flex-shrink-0 bg-darker hover:bg-dark text-white font-bold px-6 py-3 rounded-sm font-[family-name:var(--font-display)] text-lg tracking-wider transition-colors"
+                className="bg-darker hover:bg-dark text-white font-bold px-8 py-3 rounded-sm font-[family-name:var(--font-display)] text-lg tracking-wider transition-colors"
               >
                 Call Us
               </a>
