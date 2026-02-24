@@ -45,6 +45,7 @@ export default function OrderWizard() {
     (target: number) => {
       setDirection(target > step ? 1 : -1);
       setStep(target);
+      window.scrollTo(0, 0);
     },
     [step],
   );
@@ -52,11 +53,13 @@ export default function OrderWizard() {
   const next = useCallback(() => {
     setDirection(1);
     setStep((s) => Math.min(s + 1, 5));
+    window.scrollTo(0, 0);
   }, []);
 
   const back = useCallback(() => {
     setDirection(-1);
     setStep((s) => Math.max(s - 1, 0));
+    window.scrollTo(0, 0);
   }, []);
 
   const handleStepClick = useCallback(
