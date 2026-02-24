@@ -384,8 +384,8 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-6 text-lg md:text-xl text-text max-w-2xl mx-auto leading-relaxed"
           >
-            One call for skilled tradespeople, site personnel, plant, and materials.
-            Construction staffing across 6 UK regions with 24-hour turnaround.
+            The UK&apos;s first construction labour agency with fully online ordering.
+            Pick your trade, choose your county, and get a live hourly rate — workers on site within 24 hours.
           </motion.p>
 
           <motion.div
@@ -394,15 +394,9 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a
-              href="tel:03301337901"
-              className="bg-accent hover:bg-accent-bright text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
-            >
-              Call 0330 133 7901
-            </a>
             <Link
               href="/order"
-              className="border-2 border-accent hover:bg-accent text-accent hover:text-white px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
+              className="bg-accent hover:bg-accent-bright text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
             >
               Order Workers
             </Link>
