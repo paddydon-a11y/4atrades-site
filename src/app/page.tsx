@@ -401,10 +401,10 @@ export default function HomePage() {
               Call 0330 133 7901
             </a>
             <Link
-              href="/tt"
-              className="border-2 border-white/30 hover:border-accent text-white hover:text-accent px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
+              href="/order"
+              className="border-2 border-accent hover:bg-accent text-accent hover:text-white px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
             >
-              View All Trades
+              Order Workers
             </Link>
           </motion.div>
 
