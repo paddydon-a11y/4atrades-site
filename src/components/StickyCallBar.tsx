@@ -1,19 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function StickyCallBar() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => {
-      // Show after scrolling past the hero (roughly one viewport height)
       setVisible(window.scrollY > window.innerHeight * 0.8);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Hide on the order wizard page
+  if (pathname.startsWith("/order")) return null;
 
   if (!visible) return null;
 
