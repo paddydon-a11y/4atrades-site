@@ -18,8 +18,8 @@ export async function POST(req: NextRequest) {
 
     // Build email body
     const itemLines = items.map(
-      (item: { workerType: { name: string }; tier: string; quantity: number; ratePerHour: number }) =>
-        `${item.workerType.name} (${item.tier}) x${item.quantity} @ £${item.ratePerHour.toFixed(2)}/hr = £${(item.quantity * item.ratePerHour).toFixed(2)}/hr`
+      (item: { workerType: string; tier: string; quantity: number; ratePerHour: number }) =>
+        `${item.workerType} (${item.tier}) x${item.quantity} @ £${item.ratePerHour.toFixed(2)}/hr = £${(item.quantity * item.ratePerHour).toFixed(2)}/hr`
     );
 
     const totalWorkers = items.reduce((sum: number, i: { quantity: number }) => sum + i.quantity, 0);
