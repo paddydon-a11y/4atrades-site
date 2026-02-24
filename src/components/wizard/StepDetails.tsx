@@ -220,7 +220,7 @@ export default function StepDetails({
               rows={4}
               value={details.specialRequirements}
               onChange={(e) => update("specialRequirements", e.target.value)}
-              placeholder="PPE requirements, CSCS cards, certifications, site inductions etc."
+              placeholder="e.g. special PPE required"
               className={`${inputClasses} resize-none`}
             />
           </motion.div>
