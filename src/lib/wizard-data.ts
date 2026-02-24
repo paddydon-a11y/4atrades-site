@@ -166,16 +166,28 @@ export interface ContractorType {
 
 export const contractorTypes: ContractorType[] = [
   {
+    id: "general-builder",
+    name: "General Builder",
+    description: "All-round building and construction works",
+    priorityWorkers: [
+      "labourers",
+      "bricklayers",
+      "joiners",
+      "groundworkers",
+      "plasterers",
+    ],
+  },
+  {
     id: "groundwork",
     name: "Groundwork Contractor",
     description: "Foundations, drainage, and earthworks",
     priorityWorkers: ["groundworkers", "machine-operators", "labourers"],
   },
   {
-    id: "building",
-    name: "Building Contractor",
-    description: "General building and structural works",
-    priorityWorkers: ["bricklayers", "joiners", "labourers", "plasterers"],
+    id: "bricklaying",
+    name: "Bricklaying Contractor",
+    description: "Brickwork, blockwork, and stonework",
+    priorityWorkers: ["bricklayers", "labourers"],
   },
   {
     id: "roofing",
@@ -184,33 +196,34 @@ export const contractorTypes: ContractorType[] = [
     priorityWorkers: ["roofers", "scaffolders", "labourers"],
   },
   {
-    id: "civil",
-    name: "Civil Engineering Contractor",
-    description: "Roads, utilities, and infrastructure",
-    priorityWorkers: [
-      "streetworkers",
-      "groundworkers",
-      "machine-operators",
-      "labourers",
-    ],
+    id: "joinery",
+    name: "Joinery Contractor",
+    description: "Joinery, carpentry, and timber works",
+    priorityWorkers: ["joiners", "labourers"],
   },
   {
-    id: "fitout",
-    name: "Fit-Out / Finishing Contractor",
-    description: "Interior finishing and fit-out works",
-    priorityWorkers: [
-      "joiners",
-      "plasterers",
-      "painters",
-      "tilers",
-      "upvc-fitters",
-    ],
+    id: "plastering",
+    name: "Plastering Contractor",
+    description: "Plastering, rendering, and dry lining",
+    priorityWorkers: ["plasterers", "labourers"],
   },
   {
-    id: "mande",
-    name: "M&E Contractor",
-    description: "Mechanical and electrical installations",
-    priorityWorkers: ["electricians", "plumbers", "labourers"],
+    id: "electrical",
+    name: "Electrical Contractor",
+    description: "Electrical installations and wiring",
+    priorityWorkers: ["electricians", "labourers"],
+  },
+  {
+    id: "plumbing",
+    name: "Plumbing Contractor",
+    description: "Plumbing, heating, and gas works",
+    priorityWorkers: ["plumbers", "labourers"],
+  },
+  {
+    id: "painting",
+    name: "Painting & Decorating Contractor",
+    description: "Interior and exterior painting and decorating",
+    priorityWorkers: ["painters", "labourers"],
   },
   {
     id: "landscaping",
@@ -221,16 +234,6 @@ export const contractorTypes: ContractorType[] = [
       "fencers",
       "machine-operators",
       "labourers",
-    ],
-  },
-  {
-    id: "main",
-    name: "Main Contractor / Developer",
-    description: "Project management and site supervision",
-    priorityWorkers: [
-      "site-managers",
-      "site-engineers",
-      "quantity-surveyors",
     ],
   },
 ];
