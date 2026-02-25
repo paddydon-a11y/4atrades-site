@@ -22,10 +22,6 @@ export default function OrderBasket({
   if (items.length === 0) return null;
 
   const totalWorkers = items.reduce((sum, item) => sum + item.quantity, 0);
-  const totalRate = items.reduce(
-    (sum, item) => sum + item.ratePerHour * item.quantity,
-    0,
-  );
 
   return (
     <motion.div
@@ -130,14 +126,8 @@ export default function OrderBasket({
           onClick={() => setExpanded(!expanded)}
           className="flex items-center gap-3 flex-1 min-w-0 text-left"
         >
-          <span className="text-white font-medium text-sm whitespace-nowrap">
-            {totalWorkers} worker{totalWorkers !== 1 ? "s" : ""}
-          </span>
-          <span className="text-text-muted text-sm">|</span>
           <span className="text-accent font-bold text-sm whitespace-nowrap tabular-nums">
-            {"\u00A3"}
-            {totalRate.toFixed(2)}
-            <span className="text-text-muted font-normal">/hr</span>
+            {totalWorkers} worker{totalWorkers !== 1 ? "s" : ""}
           </span>
 
           {/* Chevron */}

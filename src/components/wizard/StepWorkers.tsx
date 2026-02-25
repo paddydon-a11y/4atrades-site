@@ -35,16 +35,15 @@ const card = {
 function WorkerCard({
   worker,
   county,
-  isAdded,
   onAdd,
 }: {
   worker: WorkerType;
   county: string;
-  isAdded: boolean;
   onAdd: (item: OrderItem) => void;
 }) {
   const [selectedTier, setSelectedTier] = useState(0);
   const [quantity, setQuantity] = useState(1);
+  const [justAdded, setJustAdded] = useState(false);
 
   const tier = worker.tiers[selectedTier];
   const rate = getRate(county, worker.rateName, tier);
@@ -57,8 +56,9 @@ function WorkerCard({
       quantity,
       ratePerHour: rate,
     });
-    // Reset quantity after adding
     setQuantity(1);
+    setJustAdded(true);
+    setTimeout(() => setJustAdded(false), 1500);
   };
 
   return (
@@ -101,7 +101,7 @@ function WorkerCard({
           <p className="text-accent font-bold text-xl tabular-nums">
             {"\u00A3"}
             {rate.toFixed(2)}
-            <span className="text-text-muted text-sm font-normal">/hr</span>
+            <span className="text-text-muted text-sm font-normal">/hr per worker</span>
           </p>
         ) : (
           <p className="text-text-muted text-sm">Rate not available</p>
@@ -131,21 +131,19 @@ function WorkerCard({
           </button>
         </div>
 
-        {/* Add / Added button */}
-        {isAdded ? (
-          <span className="flex-1 bg-accent/20 text-accent font-bold rounded-sm px-6 py-3 text-center text-sm min-h-[48px] flex items-center justify-center">
-            Added
-          </span>
-        ) : (
-          <button
-            type="button"
-            onClick={handleAdd}
-            disabled={rate === null}
-            className="flex-1 bg-accent hover:bg-accent-bright text-white font-bold rounded-sm px-6 py-3 transition-colors disabled:opacity-40 disabled:cursor-not-allowed min-h-[48px]"
-          >
-            Add to Order
-          </button>
-        )}
+        {/* Add button */}
+        <button
+          type="button"
+          onClick={handleAdd}
+          disabled={rate === null}
+          className={`flex-1 font-bold rounded-sm px-6 py-3 transition-colors min-h-[48px] ${
+            justAdded
+              ? "bg-accent/20 text-accent"
+              : "bg-accent hover:bg-accent-bright text-white disabled:opacity-40 disabled:cursor-not-allowed"
+          }`}
+        >
+          {justAdded ? "Added!" : "Add to Order"}
+        </button>
       </div>
     </motion.div>
   );
@@ -165,13 +163,6 @@ export default function StepWorkers({
     () => getSortedWorkerTypes(contractorType),
     [contractorType],
   );
-
-  // Track which worker+tier combos are already in the order
-  const addedWorkerIds = useMemo(() => {
-    const ids = new Set<string>();
-    items.forEach((item) => ids.add(item.workerType.id));
-    return ids;
-  }, [items]);
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 pb-[120px]">
@@ -197,7 +188,6 @@ export default function StepWorkers({
             key={worker.id}
             worker={worker}
             county={county}
-            isAdded={addedWorkerIds.has(worker.id)}
             onAdd={onAddItem}
           />
         ))}
