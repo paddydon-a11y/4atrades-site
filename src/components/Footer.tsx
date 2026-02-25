@@ -27,6 +27,7 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/tt", label: "All Trades" },
                 { href: "/join", label: "Strategic Partnerships" },
+                { href: "/order", label: "Order Workers" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-text-muted hover:text-accent transition-colors text-sm">

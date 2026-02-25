@@ -191,7 +191,7 @@ function PartnershipCTA() {
     <section className="relative overflow-hidden py-24 px-6">
       <Image
         src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-        alt="Construction site"
+        alt="Construction site workers collaborating on a building project"
         fill
         className="object-cover"
       />

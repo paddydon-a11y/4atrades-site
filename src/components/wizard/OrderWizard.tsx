@@ -220,6 +220,7 @@ export default function OrderWizard() {
   return (
     <div className="bg-darker min-h-screen pt-20 md:pt-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-32">
+        <h1 className="sr-only">Order Construction Workers Online</h1>
         {/* Progress bar */}
         <ProgressBar currentStep={step} onStepClick={handleStepClick} />
 
