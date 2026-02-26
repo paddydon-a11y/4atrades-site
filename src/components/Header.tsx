@@ -81,7 +81,7 @@ export default function Header() {
               width: "100vw",
               height: "100vh",
               background: "#111111",
-              zIndex: 60,
+              zIndex: 40,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
