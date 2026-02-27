@@ -4,14 +4,16 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProgressBar from "@/components/wizard/ProgressBar";
 
+import StepTeam from "./StepTeam";
 import StepTrade from "./StepTrade";
 import StepRegion from "./StepRegion";
 import StepExperience from "./StepExperience";
 import StepCSCS from "./StepCSCS";
 import StepDetails from "./StepDetails";
 import StepConfirm from "./StepConfirm";
+import type { GangMember } from "./StepTeam";
 
-const REGISTER_STEPS = ["Trade", "Location", "Experience", "CSCS", "Details", "Confirm"];
+const REGISTER_STEPS = ["Team", "Trade", "Location", "Experience", "CSCS", "Details", "Confirm"];
 
 const variants = {
   enter: (dir: number) => ({ x: dir > 0 ? 300 : -300, opacity: 0 }),
@@ -22,6 +24,8 @@ const variants = {
 export default function RegisterWizard() {
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
+  const [gangType, setGangType] = useState<"individual" | "gang" | null>(null);
+  const [gangMembers, setGangMembers] = useState<GangMember[]>([]);
   const [tradeId, setTradeId] = useState<string | null>(null);
   const [tradeName, setTradeName] = useState<string | null>(null);
   const [region, setRegion] = useState<string | null>(null);
@@ -41,7 +45,7 @@ export default function RegisterWizard() {
 
   const next = useCallback(() => {
     setDirection(1);
-    setStep((s) => Math.min(s + 1, 5));
+    setStep((s) => Math.min(s + 1, 6));
     window.scrollTo(0, 0);
   }, []);
 
@@ -74,6 +78,8 @@ export default function RegisterWizard() {
             county,
             experienceTier,
             hasCSCS,
+            gangType,
+            gangMembers: gangType === "gang" ? gangMembers : undefined,
             name,
             phone,
           }),
@@ -86,12 +92,22 @@ export default function RegisterWizard() {
         setSubmitting(false);
       }
     },
-    [tradeName, tradeId, region, county, experienceTier, hasCSCS, next],
+    [tradeName, tradeId, region, county, experienceTier, hasCSCS, gangType, gangMembers, next],
   );
 
   function renderStep() {
     switch (step) {
       case 0:
+        return (
+          <StepTeam
+            onSelect={(type, members) => {
+              setGangType(type);
+              setGangMembers(members);
+              next();
+            }}
+          />
+        );
+      case 1:
         return (
           <StepTrade
             onSelect={(id, name) => {
@@ -101,7 +117,7 @@ export default function RegisterWizard() {
             }}
           />
         );
-      case 1:
+      case 2:
         return (
           <StepRegion
             onSelect={(r, c) => {
@@ -111,7 +127,7 @@ export default function RegisterWizard() {
             }}
           />
         );
-      case 2:
+      case 3:
         return (
           <StepExperience
             tradeId={tradeId!}
@@ -121,7 +137,7 @@ export default function RegisterWizard() {
             }}
           />
         );
-      case 3:
+      case 4:
         return (
           <StepCSCS
             onSelect={(cscs) => {
@@ -130,14 +146,14 @@ export default function RegisterWizard() {
             }}
           />
         );
-      case 4:
+      case 5:
         return (
           <StepDetails
             onSubmit={handleSubmit}
             submitting={submitting}
           />
         );
-      case 5:
+      case 6:
         return <StepConfirm />;
       default:
         return null;
@@ -155,7 +171,7 @@ export default function RegisterWizard() {
           steps={REGISTER_STEPS}
         />
 
-        {step > 0 && step < 5 && (
+        {step > 0 && step < 6 && (
           <button
             type="button"
             onClick={back}

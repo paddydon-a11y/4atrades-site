@@ -1,14 +1,53 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
+interface GangMember {
+  tradeId: string;
+  tradeName: string;
+  quantity: number;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    const { trade, tradeId, region, county, experienceTier, hasCSCS, name, phone } = body;
+    const { trade, tradeId, region, county, experienceTier, hasCSCS, name, phone, gangType, gangMembers } = body;
 
     if (!trade || !tradeId || !region || !county || !experienceTier || hasCSCS === undefined || !name || !phone) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    // Build gang composition rows if applicable
+    let teamSection = "";
+    if (gangType === "gang" && Array.isArray(gangMembers) && gangMembers.length > 0) {
+      const gangRows = (gangMembers as GangMember[])
+        .map(
+          (m) =>
+            `<tr style="border-bottom: 1px solid #333;">
+              <td style="padding: 6px 0; color: #999; padding-left: 16px;">${m.tradeName}</td>
+              <td style="padding: 6px 0; text-align: right; color: #fff;">${m.quantity}</td>
+            </tr>`
+        )
+        .join("");
+
+      const totalMembers = (gangMembers as GangMember[]).reduce((sum: number, m: GangMember) => sum + m.quantity, 0);
+
+      teamSection = `
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px 0; color: #999;">Team</td>
+        <td style="padding: 8px 0; text-align: right; color: #FF6B00; font-weight: bold;">Gang (${totalMembers} members)</td>
+      </tr>
+      <tr><td colspan="2" style="padding: 0;">
+        <table style="width: 100%; border-collapse: collapse;">
+          ${gangRows}
+        </table>
+      </td></tr>`;
+    } else {
+      teamSection = `
+      <tr style="border-bottom: 1px solid #333;">
+        <td style="padding: 8px 0; color: #999;">Team</td>
+        <td style="padding: 8px 0; text-align: right; color: #fff;">Individual</td>
+      </tr>`;
     }
 
     const html = `
@@ -33,6 +72,7 @@ export async function POST(req: NextRequest) {
         <td style="padding: 8px 0; color: #999;">Trade</td>
         <td style="padding: 8px 0; text-align: right; color: #fff;">${trade}</td>
       </tr>
+      ${teamSection}
       <tr style="border-bottom: 1px solid #333;">
         <td style="padding: 8px 0; color: #999;">Experience / Tier</td>
         <td style="padding: 8px 0; text-align: right; color: #fff;">${experienceTier}</td>
