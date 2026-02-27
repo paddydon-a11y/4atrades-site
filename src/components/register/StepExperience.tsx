@@ -26,15 +26,19 @@ export default function StepExperience({ tradeId, onSelect }: StepExperienceProp
   const trade = workerTypes.find((wt) => wt.id === tradeId);
   const tiers = trade?.tiers ?? [];
   const tierLabel = trade?.tierLabel ?? "Experience";
+  const isYearsOfExperience = tierLabel === "Experience (years)";
 
   return (
     <div className="w-full max-w-2xl mx-auto px-4">
       <h2 className="font-[family-name:var(--font-display)] uppercase tracking-wider text-white text-3xl md:text-4xl mb-3 text-center">
-        {tierLabel}
+        {isYearsOfExperience ? "How many years of experience do you have?" : tierLabel}
       </h2>
-      <p className="text-text-muted text-center mb-8">
-        Select the option that best describes you
-      </p>
+      {!isYearsOfExperience && (
+        <p className="text-text-muted text-center mb-8">
+          Select the option that best describes you
+        </p>
+      )}
+      {isYearsOfExperience && <div className="mb-8" />}
 
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-3 gap-4"

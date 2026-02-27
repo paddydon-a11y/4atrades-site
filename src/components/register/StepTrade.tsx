@@ -44,7 +44,7 @@ export default function StepTrade({ onSelect }: StepTradeProps) {
             onClick={() => onSelect(wt.id, wt.name)}
             className="bg-card border border-white/5 rounded-lg p-4 text-center transition-colors hover:border-accent/50 focus:outline-none focus:border-accent/50 min-h-[48px]"
           >
-            <p className="text-white font-bold text-sm sm:text-base">{wt.name}</p>
+            <p className="text-white font-bold text-sm sm:text-base">{wt.name.replace(/s$/, '')}</p>
           </motion.button>
         ))}
       </motion.div>
