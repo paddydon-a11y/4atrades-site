@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import type { OrderItem } from "@/lib/wizard-data";
 
@@ -18,12 +19,17 @@ export default function OrderBasket({
   onContinue,
 }: BasketProps) {
   const [expanded, setExpanded] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  if (items.length === 0) return null;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (items.length === 0 || !mounted) return null;
 
   const totalWorkers = items.reduce((sum, item) => sum + item.quantity, 0);
 
-  return (
+  return createPortal(
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -155,6 +161,7 @@ export default function OrderBasket({
           Continue
         </button>
       </div>
-    </motion.div>
+    </motion.div>,
+    document.body,
   );
 }

@@ -42,7 +42,7 @@ function WorkerCard({
   onAdd: (item: OrderItem) => void;
 }) {
   const [selectedTier, setSelectedTier] = useState(0);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
   const [justAdded, setJustAdded] = useState(false);
 
   const tier = worker.tiers[selectedTier];
@@ -56,7 +56,7 @@ function WorkerCard({
       quantity,
       ratePerHour: rate,
     });
-    setQuantity(1);
+    setQuantity(0);
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1500);
   };
@@ -114,7 +114,7 @@ function WorkerCard({
         <div className="flex items-center gap-2">
           <button
             type="button"
-            onClick={() => setQuantity(Math.max(1, quantity - 1))}
+            onClick={() => setQuantity(Math.max(0, quantity - 1))}
             className="w-10 h-10 flex items-center justify-center rounded bg-white/10 text-white hover:bg-white/20 transition-colors text-lg font-bold min-h-[48px] min-w-[48px]"
           >
             -
@@ -135,7 +135,7 @@ function WorkerCard({
         <button
           type="button"
           onClick={handleAdd}
-          disabled={rate === null}
+          disabled={rate === null || quantity === 0}
           className={`flex-1 font-bold rounded-sm px-6 py-3 transition-colors min-h-[48px] ${
             justAdded
               ? "bg-accent/20 text-accent"
