@@ -218,7 +218,7 @@ function PartnershipCTA() {
 
         <AnimatedSection className="mt-10">
           <Link
-            href="/join"
+            href="/claim"
             className="inline-block bg-accent hover:bg-accent-bright text-white font-bold px-8 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
           >
             Claim Your Territory

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -112,12 +113,12 @@ export default function TerritoryPartnerPage() {
             transition={{ delay: 0.5 }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a
-              href="tel:03301337901"
+            <Link
+              href="/claim"
               className="bg-accent hover:bg-accent-bright text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
             >
-              Call Us Now
-            </a>
+              Claim Your Territory
+            </Link>
             <a
               href="#how-it-works"
               className="border-2 border-white/30 hover:border-accent text-white hover:text-accent px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
@@ -174,12 +175,12 @@ export default function TerritoryPartnerPage() {
                   ))}
                 </div>
               </div>
-              <a
-                href="tel:03301337901"
+              <Link
+                href="/claim"
                 className="mt-10 inline-block bg-accent hover:bg-accent-bright text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
               >
                 Claim Your Territory
-              </a>
+              </Link>
             </div>
           </AnimatedSection>
         </div>
