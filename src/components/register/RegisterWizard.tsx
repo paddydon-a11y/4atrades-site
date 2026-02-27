@@ -114,7 +114,12 @@ export default function RegisterWizard() {
             onSelect={(type, members) => {
               setGangType(type);
               setGangMembers(members);
-              next();
+              // Gang skips Trade (step 1) → go straight to Location (step 2)
+              if (type === "gang") {
+                goTo(2);
+              } else {
+                next();
+              }
             }}
           />
         );
