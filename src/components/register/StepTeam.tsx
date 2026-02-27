@@ -202,12 +202,12 @@ export default function StepTeam({ onSelect }: StepTeamProps) {
               })}
             </motion.div>
 
-            <div className="mt-8">
+            <div className="sticky bottom-4 mt-8 z-10">
               <button
                 type="button"
                 disabled={totalMembers === 0}
                 onClick={handleContinue}
-                className="w-full bg-accent hover:bg-accent-bright text-white font-bold rounded-sm px-8 py-3 transition-colors min-h-[48px] font-[family-name:var(--font-display)] tracking-wider text-lg disabled:opacity-40 disabled:cursor-not-allowed"
+                className="w-full bg-accent hover:bg-accent-bright text-white font-bold rounded-sm px-8 py-3 transition-colors min-h-[48px] font-[family-name:var(--font-display)] tracking-wider text-lg disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-black/40"
               >
                 Continue ({totalMembers} {totalMembers === 1 ? "member" : "members"})
               </button>
