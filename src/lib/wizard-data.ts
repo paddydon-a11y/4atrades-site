@@ -32,7 +32,7 @@ export const workerTypes: WorkerType[] = [
     name: "Machine Operators",
     rateName: "Machine Operators",
     tierLabel: "Machine Type",
-    tiers: ["Dumper", "TH", "Machine"],
+    tiers: ["Dumper", "Telehandler", "Machine"],
   },
   {
     id: "streetworkers",

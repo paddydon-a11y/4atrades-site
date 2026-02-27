@@ -35,7 +35,7 @@ export const rates = {
   "County Durham": {
     "Labourers": { "1-3": 13.99, "4-10": 15.99, "10+": 18.99 },
     "Groundworkers": { "1-3": 16.99, "4-10": 18.49, "10+": 22.49 },
-    "Machine Operators": { "Dumper": 16.99, "TH": 18.49, "Machine": 22.49 },
+    "Machine Operators": { "Dumper": 16.99, "Telehandler": 18.49, "Machine": 22.49 },
     "Streetworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Rebar Workers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Bricklayers": { "1-3": 21.99, "4-10": 26.99, "10+": 29.99 },
@@ -57,7 +57,7 @@ export const rates = {
   "Northumberland": {
     "Labourers": { "1-3": 13.99, "4-10": 15.99, "10+": 18.99 },
     "Groundworkers": { "1-3": 16.99, "4-10": 18.49, "10+": 22.49 },
-    "Machine Operators": { "Dumper": 16.99, "TH": 18.49, "Machine": 22.49 },
+    "Machine Operators": { "Dumper": 16.99, "Telehandler": 18.49, "Machine": 22.49 },
     "Streetworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Rebar Workers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Bricklayers": { "1-3": 21.99, "4-10": 26.99, "10+": 29.99 },
@@ -79,7 +79,7 @@ export const rates = {
   "Tyne and Wear": {
     "Labourers": { "1-3": 13.99, "4-10": 15.99, "10+": 18.99 },
     "Groundworkers": { "1-3": 16.99, "4-10": 18.49, "10+": 22.49 },
-    "Machine Operators": { "Dumper": 16.99, "TH": 18.49, "Machine": 22.49 },
+    "Machine Operators": { "Dumper": 16.99, "Telehandler": 18.49, "Machine": 22.49 },
     "Streetworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Rebar Workers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Bricklayers": { "1-3": 21.99, "4-10": 26.99, "10+": 29.99 },
@@ -101,7 +101,7 @@ export const rates = {
   "Teesside area (part of North Yorkshire)": {
     "Labourers": { "1-3": 13.99, "4-10": 15.99, "10+": 18.99 },
     "Groundworkers": { "1-3": 16.99, "4-10": 18.49, "10+": 22.49 },
-    "Machine Operators": { "Dumper": 16.99, "TH": 18.49, "Machine": 22.49 },
+    "Machine Operators": { "Dumper": 16.99, "Telehandler": 18.49, "Machine": 22.49 },
     "Streetworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Rebar Workers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
     "Bricklayers": { "1-3": 21.99, "4-10": 26.99, "10+": 29.99 },
@@ -123,7 +123,7 @@ export const rates = {
   "Cumbria": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -145,7 +145,7 @@ export const rates = {
   "Greater Manchester": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -167,7 +167,7 @@ export const rates = {
   "Lancashire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -189,7 +189,7 @@ export const rates = {
   "Cheshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -211,7 +211,7 @@ export const rates = {
   "Merseyside": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -233,7 +233,7 @@ export const rates = {
   "East Riding of Yorkshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -255,7 +255,7 @@ export const rates = {
   "North Yorkshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -277,7 +277,7 @@ export const rates = {
   "South Yorkshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -299,7 +299,7 @@ export const rates = {
   "West Yorkshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -321,7 +321,7 @@ export const rates = {
   "Derbyshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -343,7 +343,7 @@ export const rates = {
   "Leicestershire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -365,7 +365,7 @@ export const rates = {
   "Lincolnshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -387,7 +387,7 @@ export const rates = {
   "Northamptonshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -409,7 +409,7 @@ export const rates = {
   "Nottinghamshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -431,7 +431,7 @@ export const rates = {
   "Rutland": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -453,7 +453,7 @@ export const rates = {
   "West Midlands (metropolitan county)": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -475,7 +475,7 @@ export const rates = {
   "Herefordshire": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -497,7 +497,7 @@ export const rates = {
   "Shropshire": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -519,7 +519,7 @@ export const rates = {
   "Staffordshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -541,7 +541,7 @@ export const rates = {
   "Warwickshire": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -563,7 +563,7 @@ export const rates = {
   "Worcestershire": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -585,7 +585,7 @@ export const rates = {
   "Bedfordshire": {
     "Labourers": { "1-3": 15.24, "4-10": 17.24, "10+": 20.24 },
     "Groundworkers": { "1-3": 18.24, "4-10": 19.74, "10+": 23.74 },
-    "Machine Operators": { "Dumper": 18.24, "TH": 19.74, "Machine": 23.74 },
+    "Machine Operators": { "Dumper": 18.24, "Telehandler": 19.74, "Machine": 23.74 },
     "Streetworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
     "Rebar Workers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
     "Bricklayers": { "1-3": 23.24, "4-10": 28.24, "10+": 31.24 },
@@ -607,7 +607,7 @@ export const rates = {
   "Cambridgeshire": {
     "Labourers": { "1-3": 15.24, "4-10": 17.24, "10+": 20.24 },
     "Groundworkers": { "1-3": 18.24, "4-10": 19.74, "10+": 23.74 },
-    "Machine Operators": { "Dumper": 18.24, "TH": 19.74, "Machine": 23.74 },
+    "Machine Operators": { "Dumper": 18.24, "Telehandler": 19.74, "Machine": 23.74 },
     "Streetworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
     "Rebar Workers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
     "Bricklayers": { "1-3": 23.24, "4-10": 28.24, "10+": 31.24 },
@@ -629,7 +629,7 @@ export const rates = {
   "Essex": {
     "Labourers": { "1-3": 16.24, "4-10": 18.24, "10+": 21.24 },
     "Groundworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
-    "Machine Operators": { "Dumper": 19.24, "TH": 20.74, "Machine": 24.74 },
+    "Machine Operators": { "Dumper": 19.24, "Telehandler": 20.74, "Machine": 24.74 },
     "Streetworkers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Rebar Workers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Bricklayers": { "1-3": 24.24, "4-10": 29.24, "10+": 32.24 },
@@ -651,7 +651,7 @@ export const rates = {
   "Hertfordshire": {
     "Labourers": { "1-3": 16.24, "4-10": 18.24, "10+": 21.24 },
     "Groundworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
-    "Machine Operators": { "Dumper": 19.24, "TH": 20.74, "Machine": 24.74 },
+    "Machine Operators": { "Dumper": 19.24, "Telehandler": 20.74, "Machine": 24.74 },
     "Streetworkers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Rebar Workers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Bricklayers": { "1-3": 24.24, "4-10": 29.24, "10+": 32.24 },
@@ -673,7 +673,7 @@ export const rates = {
   "Norfolk": {
     "Labourers": { "1-3": 16.24, "4-10": 18.24, "10+": 21.24 },
     "Groundworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
-    "Machine Operators": { "Dumper": 19.24, "TH": 20.74, "Machine": 24.74 },
+    "Machine Operators": { "Dumper": 19.24, "Telehandler": 20.74, "Machine": 24.74 },
     "Streetworkers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Rebar Workers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Bricklayers": { "1-3": 24.24, "4-10": 29.24, "10+": 32.24 },
@@ -695,7 +695,7 @@ export const rates = {
   "Suffolk": {
     "Labourers": { "1-3": 16.24, "4-10": 18.24, "10+": 21.24 },
     "Groundworkers": { "1-3": 19.24, "4-10": 20.74, "10+": 24.74 },
-    "Machine Operators": { "Dumper": 19.24, "TH": 20.74, "Machine": 24.74 },
+    "Machine Operators": { "Dumper": 19.24, "Telehandler": 20.74, "Machine": 24.74 },
     "Streetworkers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Rebar Workers": { "1-3": 20.24, "4-10": 21.74, "10+": 25.74 },
     "Bricklayers": { "1-3": 24.24, "4-10": 29.24, "10+": 32.24 },
@@ -717,7 +717,7 @@ export const rates = {
   "London": {
     "Labourers": { "1-3": 17.99, "4-10": 19.99, "10+": 22.99 },
     "Groundworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
-    "Machine Operators": { "Dumper": 20.99, "TH": 22.49, "Machine": 26.49 },
+    "Machine Operators": { "Dumper": 20.99, "Telehandler": 22.49, "Machine": 26.49 },
     "Streetworkers": { "1-3": 21.99, "4-10": 23.49, "10+": 27.49 },
     "Rebar Workers": { "1-3": 21.99, "4-10": 23.49, "10+": 27.49 },
     "Bricklayers": { "1-3": 25.99, "4-10": 30.99, "10+": 33.99 },
@@ -739,7 +739,7 @@ export const rates = {
   "Berkshire": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -761,7 +761,7 @@ export const rates = {
   "Buckinghamshire": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -783,7 +783,7 @@ export const rates = {
   "Hampshire": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -805,7 +805,7 @@ export const rates = {
   "Isle of Wight": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -827,7 +827,7 @@ export const rates = {
   "Surrey": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -849,7 +849,7 @@ export const rates = {
   "Kent": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -871,7 +871,7 @@ export const rates = {
   "Oxfordshire": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -893,7 +893,7 @@ export const rates = {
   "East Sussex": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -915,7 +915,7 @@ export const rates = {
   "West Sussex": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -937,7 +937,7 @@ export const rates = {
   "Bristol": {
     "Labourers": { "1-3": 16.99, "4-10": 18.99, "10+": 21.99 },
     "Groundworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
-    "Machine Operators": { "Dumper": 19.99, "TH": 21.49, "Machine": 25.49 },
+    "Machine Operators": { "Dumper": 19.99, "Telehandler": 21.49, "Machine": 25.49 },
     "Streetworkers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Rebar Workers": { "1-3": 20.99, "4-10": 22.49, "10+": 26.49 },
     "Bricklayers": { "1-3": 24.99, "4-10": 29.99, "10+": 32.99 },
@@ -959,7 +959,7 @@ export const rates = {
   "Cornwall": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -981,7 +981,7 @@ export const rates = {
   "Devon": {
     "Labourers": { "1-3": 14.99, "4-10": 16.99, "10+": 19.99 },
     "Groundworkers": { "1-3": 17.99, "4-10": 19.49, "10+": 23.49 },
-    "Machine Operators": { "Dumper": 17.99, "TH": 19.49, "Machine": 23.49 },
+    "Machine Operators": { "Dumper": 17.99, "Telehandler": 19.49, "Machine": 23.49 },
     "Streetworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Rebar Workers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
     "Bricklayers": { "1-3": 22.99, "4-10": 27.99, "10+": 30.99 },
@@ -1003,7 +1003,7 @@ export const rates = {
   "Dorset": {
     "Labourers": { "1-3": 15.99, "4-10": 17.99, "10+": 20.99 },
     "Groundworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
-    "Machine Operators": { "Dumper": 18.99, "TH": 20.49, "Machine": 24.49 },
+    "Machine Operators": { "Dumper": 18.99, "Telehandler": 20.49, "Machine": 24.49 },
     "Streetworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Rebar Workers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Bricklayers": { "1-3": 23.99, "4-10": 28.99, "10+": 31.99 },
@@ -1025,7 +1025,7 @@ export const rates = {
   "Gloucestershire": {
     "Labourers": { "1-3": 15.99, "4-10": 17.99, "10+": 20.99 },
     "Groundworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
-    "Machine Operators": { "Dumper": 18.99, "TH": 20.49, "Machine": 24.49 },
+    "Machine Operators": { "Dumper": 18.99, "Telehandler": 20.49, "Machine": 24.49 },
     "Streetworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Rebar Workers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Bricklayers": { "1-3": 23.99, "4-10": 28.99, "10+": 31.99 },
@@ -1047,7 +1047,7 @@ export const rates = {
   "Somerset": {
     "Labourers": { "1-3": 15.99, "4-10": 17.99, "10+": 20.99 },
     "Groundworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
-    "Machine Operators": { "Dumper": 18.99, "TH": 20.49, "Machine": 24.49 },
+    "Machine Operators": { "Dumper": 18.99, "Telehandler": 20.49, "Machine": 24.49 },
     "Streetworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Rebar Workers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Bricklayers": { "1-3": 23.99, "4-10": 28.99, "10+": 31.99 },
@@ -1069,7 +1069,7 @@ export const rates = {
   "Wiltshire": {
     "Labourers": { "1-3": 15.99, "4-10": 17.99, "10+": 20.99 },
     "Groundworkers": { "1-3": 18.99, "4-10": 20.49, "10+": 24.49 },
-    "Machine Operators": { "Dumper": 18.99, "TH": 20.49, "Machine": 24.49 },
+    "Machine Operators": { "Dumper": 18.99, "Telehandler": 20.49, "Machine": 24.49 },
     "Streetworkers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Rebar Workers": { "1-3": 19.99, "4-10": 21.49, "10+": 25.49 },
     "Bricklayers": { "1-3": 23.99, "4-10": 28.99, "10+": 31.99 },
@@ -1091,7 +1091,7 @@ export const rates = {
   "Anglesey": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1113,7 +1113,7 @@ export const rates = {
   "Conwy": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1135,7 +1135,7 @@ export const rates = {
   "Denbighshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1157,7 +1157,7 @@ export const rates = {
   "Flintshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1179,7 +1179,7 @@ export const rates = {
   "Gwynedd": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1201,7 +1201,7 @@ export const rates = {
   "Wrexham": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1223,7 +1223,7 @@ export const rates = {
   "Ceredigion": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1245,7 +1245,7 @@ export const rates = {
   "Powys": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1267,7 +1267,7 @@ export const rates = {
   "Blaenau Gwent": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1289,7 +1289,7 @@ export const rates = {
   "Bridgend": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1311,7 +1311,7 @@ export const rates = {
   "Caerphilly": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1333,7 +1333,7 @@ export const rates = {
   "Cardiff": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1355,7 +1355,7 @@ export const rates = {
   "Carmarthenshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1377,7 +1377,7 @@ export const rates = {
   "Merthyr Tydfil": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1399,7 +1399,7 @@ export const rates = {
   "Monmouthshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1421,7 +1421,7 @@ export const rates = {
   "Neath Port Talbot": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1443,7 +1443,7 @@ export const rates = {
   "Newport": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1465,7 +1465,7 @@ export const rates = {
   "Pembrokeshire": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1487,7 +1487,7 @@ export const rates = {
   "Rhondda Cynon Taf": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1509,7 +1509,7 @@ export const rates = {
   "Swansea": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1531,7 +1531,7 @@ export const rates = {
   "Torfaen": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
@@ -1553,7 +1553,7 @@ export const rates = {
   "Vale of Glamorgan": {
     "Labourers": { "1-3": 14.49, "4-10": 16.49, "10+": 19.49 },
     "Groundworkers": { "1-3": 17.49, "4-10": 18.99, "10+": 22.99 },
-    "Machine Operators": { "Dumper": 17.49, "TH": 18.99, "Machine": 22.99 },
+    "Machine Operators": { "Dumper": 17.49, "Telehandler": 18.99, "Machine": 22.99 },
     "Streetworkers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Rebar Workers": { "1-3": 18.49, "4-10": 19.99, "10+": 23.99 },
     "Bricklayers": { "1-3": 22.49, "4-10": 27.49, "10+": 30.49 },
