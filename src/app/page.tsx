@@ -400,6 +400,12 @@ export default function HomePage() {
             >
               Order Workers
             </Link>
+            <Link
+              href="/register"
+              className="border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-2xl tracking-wider transition-colors"
+            >
+              Register as a Worker
+            </Link>
           </motion.div>
 
           {/* Stat counters */}

@@ -2,17 +2,20 @@
 
 import { motion } from "framer-motion";
 
-const STEPS = ["Type", "Location", "Workers", "Review", "Details", "Confirm"];
+const DEFAULT_STEPS = ["Type", "Location", "Workers", "Review", "Details", "Confirm"];
 
 interface ProgressBarProps {
   currentStep: number;
   onStepClick?: (step: number) => void;
+  steps?: string[];
 }
 
 export default function ProgressBar({
   currentStep,
   onStepClick,
+  steps,
 }: ProgressBarProps) {
+  const STEPS = steps ?? DEFAULT_STEPS;
   return (
     <div className="w-full px-4 py-6">
       <div className="relative flex items-center justify-between max-w-2xl mx-auto">
