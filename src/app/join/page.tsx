@@ -146,10 +146,16 @@ export default function TerritoryPartnerPage() {
               <p className="text-text-muted text-sm tracking-widest uppercase">
                 Territory Partner
               </p>
-              <p className="font-[family-name:var(--font-display)] text-6xl md:text-7xl text-accent mt-3">
+              <p className="font-[family-name:var(--font-display)] text-3xl md:text-4xl text-text-muted mt-3 line-through decoration-red-500 decoration-3">
+                £14,995
+              </p>
+              <p className="font-[family-name:var(--font-display)] text-6xl md:text-7xl text-accent mt-1">
                 £4,995
               </p>
-              <p className="text-text-muted mt-2 text-lg">One-off. No monthly fees. No hidden costs.</p>
+              <p className="mt-3 inline-block bg-red-500/15 border border-red-500/30 text-red-400 text-sm font-bold px-4 py-2 rounded-sm uppercase tracking-wider">
+                Next 5 territories only
+              </p>
+              <p className="text-text-muted mt-3 text-lg">One-off. No monthly fees. No hidden costs.</p>
               <div className="mt-8 border-t border-white/10 pt-8">
                 <p className="text-white text-xl font-bold">Everything included:</p>
                 <div className="mt-4 flex flex-wrap justify-center gap-3">
