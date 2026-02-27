@@ -25,57 +25,6 @@ export const regions = [
   { name: "Scotland", cities: "Glasgow, Edinburgh, Aberdeen, Dundee" },
 ];
 
-export const partnershipTiers = [
-  {
-    level: 1,
-    name: "Strategic Referrer",
-    price: "FREE",
-    commission: "1%",
-    earningsExample: "£1,000/week",
-    description: "The easiest way to earn. Refer a client, earn commission on every invoice. No cost, no commitment.",
-    benefits: [
-      "1% commission on all referred invoices",
-      "5% labour discount on your own bookings",
-      "Instant credit account",
-      "Ad-hoc flexibility — refer when you want",
-      "Dedicated account manager",
-      "Monthly commission statements",
-    ],
-  },
-  {
-    level: 2,
-    name: "Market Access",
-    price: "£995",
-    commission: "2%",
-    earningsExample: "£2,000/week",
-    description: "For serious operators who want network access and enhanced earning potential.",
-    benefits: [
-      "2% commission on all referred invoices",
-      "Full network access — connect with other partners",
-      "Priority introductions to major contractors",
-      "Enhanced partner status and branding",
-      "Quarterly strategy reviews",
-      "All Level 1 benefits included",
-    ],
-  },
-  {
-    level: 3,
-    name: "Exclusive Territory",
-    price: "£4,995",
-    commission: "3%",
-    earningsExample: "£3,000/week",
-    description: "The ultimate partnership. Exclusive county territory, maximum commission, full operational support.",
-    benefits: [
-      "3% commission on all referred invoices",
-      "Exclusive county territory — no competition",
-      "Tender list inclusions on major projects",
-      "Dispute resolution and QS support",
-      "Full marketing and branding support",
-      "VIP networking events and introductions",
-      "All Level 1 & 2 benefits included",
-    ],
-  },
-];
 
 export const trustPoints = [
   { icon: "shield", text: "No Payroll Risk" },

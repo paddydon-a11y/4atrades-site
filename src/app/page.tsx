@@ -55,8 +55,8 @@ function ServicesSection() {
       href: "/tt",
     },
     {
-      title: "Strategic Partnerships",
-      desc: "Earn 1-3% commission on every referral. Three tiers designed for construction professionals who want to earn while they work.",
+      title: "Territory Partnerships",
+      desc: "Claim your exclusive territory. We'll provide telesales, marketing, QS support, and live leads — so you never chase a client again. £4,995 one-off.",
       icon: "🤝",
       href: "/join",
     },
@@ -200,36 +200,28 @@ function PartnershipCTA() {
       <div className="relative mx-auto max-w-7xl">
         <AnimatedSection>
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-white max-w-3xl">
-            Earn Up To <span className="text-accent">3% Commission</span> On Every Referral
+            Tired of Quiet Weeks? <span className="text-accent">We&apos;ll Send the Work to You.</span>
           </h2>
           <p className="mt-6 text-text text-lg max-w-2xl leading-relaxed">
-            Our Strategic Partnership programme is designed for construction professionals who want to earn
-            while they work. Three tiers. Real money. No catches.
+            Claim an exclusive territory for your trade. We&apos;ll provide telesales, marketing,
+            QS support, and live project introductions — so you never chase a client again.
           </p>
         </AnimatedSection>
 
-        <div className="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl">
-          {[
-            { tier: "Level 1", rate: "1%", earning: "£1,000/wk" },
-            { tier: "Level 2", rate: "2%", earning: "£2,000/wk" },
-            { tier: "Level 3", rate: "3%", earning: "£3,000/wk" },
-          ].map((item, i) => (
-            <AnimatedSection key={item.tier} delay={i * 0.15}>
-              <div className="bg-card/80 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center">
-                <p className="text-text-muted text-sm tracking-widest uppercase">{item.tier}</p>
-                <p className="font-[family-name:var(--font-display)] text-4xl text-accent mt-2">{item.rate}</p>
-                <p className="text-white font-semibold mt-2">{item.earning}</p>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+        <AnimatedSection delay={0.15}>
+          <div className="mt-12 bg-card/80 backdrop-blur-sm border border-accent/30 rounded-lg p-8 max-w-md">
+            <p className="text-text-muted text-sm tracking-widest uppercase">Territory Partner</p>
+            <p className="font-[family-name:var(--font-display)] text-5xl text-accent mt-2">£4,995</p>
+            <p className="text-white font-semibold mt-2">One-off. No monthly fees.</p>
+          </div>
+        </AnimatedSection>
 
         <AnimatedSection className="mt-10">
           <Link
             href="/join"
             className="inline-block bg-accent hover:bg-accent-bright text-white font-bold px-8 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
           >
-            Explore Partnerships
+            Claim Your Territory
           </Link>
         </AnimatedSection>
       </div>

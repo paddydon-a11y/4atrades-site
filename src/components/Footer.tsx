@@ -26,7 +26,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/tt", label: "All Trades" },
-                { href: "/join", label: "Strategic Partnerships" },
+                { href: "/join", label: "Territory Partnerships" },
                 { href: "/order", label: "Order Workers" },
               ].map((link) => (
                 <li key={link.href}>
