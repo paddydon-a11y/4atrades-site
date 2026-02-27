@@ -69,7 +69,7 @@ export default function TerritoryPartnerPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative py-32 pt-40 px-6 overflow-hidden">
+      <section className="relative py-20 pt-28 md:py-32 md:pt-40 px-6 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
           alt="Construction site"
