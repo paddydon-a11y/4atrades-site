@@ -95,7 +95,8 @@ export default function TerritoryPartnerPage() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-7xl text-white leading-tight"
           >
-            Tired of Quiet Weeks?{" "}
+            Tired of Quiet Weeks?
+            <br />
             <span className="text-accent">We&apos;ll Send the Work to You.</span>
           </motion.h1>
           <motion.p
@@ -113,14 +114,8 @@ export default function TerritoryPartnerPage() {
             transition={{ delay: 0.5 }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link
-              href="/claim"
-              className="bg-accent hover:bg-accent-bright text-white font-bold px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
-            >
-              Claim Your Territory
-            </Link>
             <a
-              href="#how-it-works"
+              href="#the-offer"
               className="border-2 border-white/30 hover:border-accent text-white hover:text-accent px-10 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
             >
               How It Works
@@ -132,7 +127,7 @@ export default function TerritoryPartnerPage() {
       <div className="construction-stripe" />
 
       {/* The Offer */}
-      <section className="bg-darker noise-bg py-24 px-6">
+      <section id="the-offer" className="bg-darker noise-bg py-24 px-6">
         <div className="mx-auto max-w-4xl text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-white">
@@ -274,11 +269,7 @@ export default function TerritoryPartnerPage() {
               q: "What exactly do I get for £4,995?",
               a: "Exclusive territory rights for your trade in your chosen county. A dedicated telesales team generating leads. Google Ads and marketing campaigns. QS and estimating support. Live project introductions. Basically, a full sales and marketing department working for you.",
             },
-            {
-              q: "Are there any monthly fees?",
-              a: "No. It's a one-off payment. No subscriptions, no hidden charges, no small print.",
-            },
-            {
+{
               q: "What does 'exclusive' actually mean?",
               a: "It means we will not represent any other contractor in your trade within your territory. If you're the groundworker for Lancashire, we don't work with another groundworker in Lancashire. Full stop.",
             },
