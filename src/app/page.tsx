@@ -212,7 +212,7 @@ function PartnershipCTA() {
           <div className="mt-12 bg-card/80 backdrop-blur-sm border border-accent/30 rounded-lg p-8 max-w-md">
             <p className="text-text-muted text-sm tracking-widest uppercase">Territory Partner</p>
             <p className="font-[family-name:var(--font-display)] text-5xl text-accent mt-2">£4,995</p>
-            <p className="text-white font-semibold mt-2">One-off. No monthly fees.</p>
+            <p className="mt-2 inline-block bg-red-500/15 border border-red-500/30 text-red-400 text-sm font-bold px-3 py-1.5 rounded-sm uppercase tracking-wider">Next 5 territories only</p>
           </div>
         </AnimatedSection>
 
