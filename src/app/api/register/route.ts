@@ -13,7 +13,13 @@ export async function POST(req: NextRequest) {
 
     const { trade, tradeId, region, county, experienceTier, hasCSCS, name, phone, gangType, gangMembers } = body;
 
-    if (!trade || !tradeId || !region || !county || !experienceTier || hasCSCS === undefined || !name || !phone) {
+    const isGang = gangType === "gang";
+
+    if (!region || !county || hasCSCS === undefined || !name || !phone || !experienceTier) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    if (!isGang && (!trade || !tradeId)) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
@@ -54,7 +60,7 @@ export async function POST(req: NextRequest) {
 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
   <div style="background: #111; padding: 24px; border-bottom: 3px solid #FF6B00;">
     <h1 style="color: #FF6B00; margin: 0; font-size: 24px;">New Worker Registration</h1>
-    <p style="color: #999; margin: 8px 0 0;">${name} &mdash; ${trade} (${county})</p>
+    <p style="color: #999; margin: 8px 0 0;">${name} &mdash; ${isGang ? "Gang" : trade} (${county})</p>
   </div>
 
   <div style="padding: 24px; background: #1a1a1a; color: #ddd;">
@@ -68,14 +74,15 @@ export async function POST(req: NextRequest) {
         <td style="padding: 8px 0; color: #999;">Phone</td>
         <td style="padding: 8px 0; text-align: right; color: #fff;"><a href="tel:${phone}" style="color: #FF6B00; text-decoration: none;">${phone}</a></td>
       </tr>
+      ${!isGang ? `
       <tr style="border-bottom: 1px solid #333;">
         <td style="padding: 8px 0; color: #999;">Trade</td>
         <td style="padding: 8px 0; text-align: right; color: #fff;">${trade}</td>
-      </tr>
+      </tr>` : ""}
       ${teamSection}
       <tr style="border-bottom: 1px solid #333;">
-        <td style="padding: 8px 0; color: #999;">Experience / Tier</td>
-        <td style="padding: 8px 0; text-align: right; color: #fff;">${experienceTier}</td>
+        <td style="padding: 8px 0; color: #999;">Experience</td>
+        <td style="padding: 8px 0; text-align: right; color: #fff;">${experienceTier} years</td>
       </tr>
       <tr style="border-bottom: 1px solid #333;">
         <td style="padding: 8px 0; color: #999;">CSCS Card</td>
@@ -101,7 +108,7 @@ export async function POST(req: NextRequest) {
     const { error } = await resend.emails.send({
       from: "4A Trades Registrations <orders@4atrades.co.uk>",
       to: ["vincent@askqs.co.uk", "chris@4atrades.co.uk"],
-      subject: `New Worker Registration: ${name} — ${trade} (${county})`,
+      subject: `New Worker Registration: ${name} — ${isGang ? "Gang" : trade} (${county})`,
       html,
     });
 

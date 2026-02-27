@@ -22,10 +22,12 @@ const card = {
   show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } },
 };
 
+const defaultTiers = ["1-3", "4-10", "10+"];
+
 export default function StepExperience({ tradeId, onSelect }: StepExperienceProps) {
-  const trade = workerTypes.find((wt) => wt.id === tradeId);
-  const tiers = trade?.tiers ?? [];
-  const tierLabel = trade?.tierLabel ?? "Experience";
+  const trade = tradeId ? workerTypes.find((wt) => wt.id === tradeId) : null;
+  const tiers = trade?.tiers ?? defaultTiers;
+  const tierLabel = trade?.tierLabel ?? "Experience (years)";
   const isYearsOfExperience = tierLabel === "Experience (years)";
 
   return (

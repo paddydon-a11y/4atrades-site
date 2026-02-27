@@ -43,25 +43,36 @@ export default function RegisterWizard() {
     [step],
   );
 
+  // Skip Trade step for gangs (trades are captured in the gang builder)
+  const skippedForGang = new Set([1]);
+
   const next = useCallback(() => {
     setDirection(1);
-    setStep((s) => Math.min(s + 1, 6));
+    setStep((s) => {
+      let target = s + 1;
+      while (target < 6 && gangType === "gang" && skippedForGang.has(target)) target++;
+      return Math.min(target, 6);
+    });
     window.scrollTo(0, 0);
-  }, []);
+  }, [gangType]);
 
   const back = useCallback(() => {
     setDirection(-1);
-    setStep((s) => Math.max(s - 1, 0));
+    setStep((s) => {
+      let target = s - 1;
+      while (target > 0 && gangType === "gang" && skippedForGang.has(target)) target--;
+      return Math.max(target, 0);
+    });
     window.scrollTo(0, 0);
-  }, []);
+  }, [gangType]);
 
   const handleStepClick = useCallback(
     (target: number) => {
-      if (target < step) {
+      if (target < step && !(gangType === "gang" && skippedForGang.has(target))) {
         goTo(target);
       }
     },
-    [step, goTo],
+    [step, goTo, gangType],
   );
 
   const handleSubmit = useCallback(
