@@ -110,8 +110,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 text-center text-text-muted text-xs">
-          &copy; {new Date().getFullYear()} 4A Ventures Limited. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/5 text-center text-text-muted text-xs space-y-2">
+          <p>&copy; {new Date().getFullYear()} 4A Ventures Limited. All rights reserved.</p>
+          <p>
+            Built by{" "}
+            <a
+              href="https://construction-sites.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-bright transition-colors"
+            >
+              construction-sites.co.uk
+            </a>
+          </p>
         </div>
       </div>
     </footer>
