@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.4atrades.co.uk"),
   title: "Construction Labour Hire UK | Skilled Tradesmen | 4A Trades",
   description:
-    "Order skilled construction workers online. Labourers, groundworkers, bricklayers, electricians & more across England & Wales. Competitive hourly rates. Fast deployment.",
+    "Order skilled construction workers online. 20+ trades across 10 regions in England & Wales. Labourers, groundworkers, bricklayers, electricians & more. Competitive hourly rates. Fast deployment.",
   keywords:
     "construction labour hire, skilled tradesmen UK, construction staffing, labour supply, construction workers",
   robots: { index: true, follow: true },

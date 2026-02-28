@@ -16,6 +16,7 @@ interface StepWorkersProps {
   onRemoveItem: (index: number) => void;
   onUpdateQuantity: (index: number, qty: number) => void;
   onContinue: () => void;
+  highlightTrade?: string;
 }
 
 const container = {
@@ -158,11 +159,18 @@ export default function StepWorkers({
   onRemoveItem,
   onUpdateQuantity,
   onContinue,
+  highlightTrade,
 }: StepWorkersProps) {
-  const sortedWorkers = useMemo(
-    () => getSortedWorkerTypes(contractorType),
-    [contractorType],
-  );
+  const sortedWorkers = useMemo(() => {
+    const workers = getSortedWorkerTypes(contractorType);
+    if (!highlightTrade) return workers;
+    // Move highlighted trade to front
+    const idx = workers.findIndex((w) => w.id === highlightTrade);
+    if (idx <= 0) return workers;
+    const copy = [...workers];
+    const [highlighted] = copy.splice(idx, 1);
+    return [highlighted, ...copy];
+  }, [contractorType, highlightTrade]);
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 pb-[120px]">

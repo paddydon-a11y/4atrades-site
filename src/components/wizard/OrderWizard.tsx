@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import ProgressBar from "./ProgressBar";
 import type { OrderItem, JobDetails } from "@/lib/wizard-data";
@@ -32,6 +33,10 @@ const INITIAL_JOB_DETAILS: JobDetails = {
 };
 
 export default function OrderWizard() {
+  const searchParams = useSearchParams();
+  const preselectedTrade = searchParams.get("trade") ?? undefined;
+  const preselectedRegion = searchParams.get("region") ?? undefined;
+
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
   const [contractorType, setContractorType] = useState<string | null>(null);
@@ -169,6 +174,7 @@ export default function OrderWizard() {
               next();
             }}
             onBack={back}
+            initialRegion={preselectedRegion}
           />
         );
       case 2:
@@ -182,6 +188,7 @@ export default function OrderWizard() {
             onRemoveItem={removeItem}
             onUpdateQuantity={updateItemQuantity}
             onContinue={next}
+            highlightTrade={preselectedTrade}
           />
         );
       case 3:

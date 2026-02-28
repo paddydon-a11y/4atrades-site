@@ -46,13 +46,13 @@ function ServicesSection() {
       title: "Labour Supply",
       desc: "From a single operative to full gangs. Skilled tradespeople on your site within 24 hours, fully vetted and ready to work.",
       icon: "👷",
-      href: "/tt",
+      href: "/trades",
     },
     {
       title: "Fixed-Price Packages",
       desc: "Labour, plant, materials, and management — all under one roof. One price, one invoice, zero headaches.",
       icon: "📋",
-      href: "/tt",
+      href: "/trades",
     },
     {
       title: "Territory Partnerships",
@@ -140,7 +140,7 @@ function TradesGrid() {
 
         <AnimatedSection className="text-center mt-12">
           <Link
-            href="/tt"
+            href="/trades"
             className="inline-block bg-accent hover:bg-accent-bright text-white font-bold px-8 py-4 rounded-sm font-[family-name:var(--font-display)] text-xl tracking-wider transition-colors"
           >
             View All Trades
@@ -236,20 +236,22 @@ function CoverageSection() {
         <AnimatedSection>
           <h2 className="text-4xl md:text-5xl text-center text-white">UK-Wide Coverage</h2>
           <p className="text-center text-text-muted mt-4 max-w-2xl mx-auto">
-            Six regions. Hundreds of sites. Your workforce, wherever you need them.
+            Ten regions. Hundreds of sites. Your workforce, wherever you need them.
           </p>
         </AnimatedSection>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {regions.map((region, i) => (
             <AnimatedSection key={region.name} delay={i * 0.1}>
-              <motion.div
-                whileHover={{ scale: 1.03, borderColor: "rgba(255,107,0,0.5)" }}
-                className="bg-card border border-white/5 rounded-lg p-6 text-center transition-colors"
-              >
-                <h3 className="text-2xl text-white">{region.name}</h3>
-                <p className="mt-2 text-text-muted text-sm">{region.cities}</p>
-              </motion.div>
+              <Link href={`/locations/${region.slug}`}>
+                <motion.div
+                  whileHover={{ scale: 1.03, borderColor: "rgba(255,107,0,0.5)" }}
+                  className="bg-card border border-white/5 rounded-lg p-6 text-center transition-colors cursor-pointer group"
+                >
+                  <h3 className="text-2xl text-white group-hover:text-accent transition-colors">{region.name}</h3>
+                  <p className="mt-2 text-text-muted text-sm">{region.cities}</p>
+                </motion.div>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
@@ -407,7 +409,7 @@ export default function HomePage() {
             transition={{ delay: 0.8 }}
             className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
           >
-            <Counter end={6} label="Regions" />
+            <Counter end={10} label="Regions" />
             <Counter end={50} suffix="+" label="Trades" />
             <Counter end={24} suffix="hr" label="Turnaround" />
           </motion.div>

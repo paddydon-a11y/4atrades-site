@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/tt",
+        destination: "/trades",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

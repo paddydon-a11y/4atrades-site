@@ -17,12 +17,16 @@ export const trades = {
 };
 
 export const regions = [
-  { name: "North West", cities: "Manchester, Liverpool, Preston, Chester" },
-  { name: "North East", cities: "Newcastle, Sunderland, Durham, Middlesbrough" },
-  { name: "Midlands", cities: "Birmingham, Nottingham, Leicester, Derby" },
-  { name: "South West", cities: "Bristol, Exeter, Bath, Plymouth" },
-  { name: "South East", cities: "London, Brighton, Reading, Oxford" },
-  { name: "Scotland", cities: "Glasgow, Edinburgh, Aberdeen, Dundee" },
+  { name: "North East", slug: "north-east", cities: "Newcastle, Sunderland, Durham, Middlesbrough" },
+  { name: "North West", slug: "north-west", cities: "Manchester, Liverpool, Preston, Chester" },
+  { name: "Yorkshire and the Humber", slug: "yorkshire-and-the-humber", cities: "Leeds, Sheffield, York, Hull" },
+  { name: "East Midlands", slug: "east-midlands", cities: "Nottingham, Leicester, Derby, Lincoln" },
+  { name: "West Midlands", slug: "west-midlands", cities: "Birmingham, Coventry, Wolverhampton, Stoke-on-Trent" },
+  { name: "East of England", slug: "east-of-england", cities: "Cambridge, Chelmsford, Ipswich, Norwich" },
+  { name: "London", slug: "london", cities: "Central London, Canary Wharf, Stratford, Croydon" },
+  { name: "South East", slug: "south-east", cities: "Brighton, Reading, Oxford, Canterbury" },
+  { name: "South West", slug: "south-west", cities: "Bristol, Exeter, Bath, Plymouth" },
+  { name: "Wales", slug: "wales", cities: "Cardiff, Swansea, Newport, Wrexham" },
 ];
 
 

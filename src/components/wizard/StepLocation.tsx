@@ -7,6 +7,7 @@ import { regionCounties } from "@/lib/rates";
 interface StepLocationProps {
   onSelect: (region: string, county: string) => void;
   onBack: () => void;
+  initialRegion?: string;
 }
 
 const container = {
@@ -38,9 +39,22 @@ const slideVariants = {
   }),
 };
 
-export default function StepLocation({ onSelect, onBack }: StepLocationProps) {
-  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
-  const [direction, setDirection] = useState(1);
+// Map URL slugs to regionCounties keys
+function resolveRegionFromSlug(slug?: string): string | null {
+  if (!slug) return null;
+  const regions = Object.keys(regionCounties);
+  const normalised = slug.toLowerCase().replace(/-/g, " ");
+  return (
+    regions.find(
+      (r) => r.toLowerCase() === normalised || r.toLowerCase().replace(/ and the /g, " and the ") === normalised,
+    ) ?? null
+  );
+}
+
+export default function StepLocation({ onSelect, onBack, initialRegion }: StepLocationProps) {
+  const resolved = resolveRegionFromSlug(initialRegion);
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(resolved);
+  const [direction, setDirection] = useState(resolved ? 1 : 1);
 
   const regions = Object.keys(regionCounties) as (keyof typeof regionCounties)[];
 
